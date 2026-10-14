@@ -354,7 +354,7 @@ h1,h2,h3,p{margin:0}h2{color:var(--brand);font-size:64px;line-height:1.25;font-w
   }
 
   function sendNav(action){
-    var msg = { type:'deck-nav', action:action };
+    var msg = { type:'deck-nav', action:action, id:Date.now().toString(36)+'-'+Math.random().toString(36).slice(2) };
     if(bc) bc.postMessage(msg);
     try{ localStorage.setItem('deck-stage:presenter:nav', JSON.stringify(Object.assign({t:Date.now()},msg))); }catch(_){}
     if(window.opener) window.opener.postMessage(msg,'*');
@@ -763,6 +763,13 @@ h1,h2,h3,p{margin:0}h2{color:var(--brand);font-size:64px;line-height:1.25;font-w
     _handlePresenterMsg(data) {
       if (!data) return;
       if (data.type === 'deck-nav') {
+        // The same command can arrive over BroadcastChannel, storage and postMessage.
+        if (data.id) {
+          if (!this._seenPresenterNav) this._seenPresenterNav = new Set();
+          if (this._seenPresenterNav.has(data.id)) return;
+          this._seenPresenterNav.add(data.id);
+          if (this._seenPresenterNav.size > 128) this._seenPresenterNav.delete(this._seenPresenterNav.values().next().value);
+        }
         if (data.action === 'next') this._go(this._index + 1, 'api');
         if (data.action === 'prev') this._go(this._index - 1, 'api');
       }
