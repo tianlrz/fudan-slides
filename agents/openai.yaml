@@ -1,0 +1,4 @@
+interface:
+  display_name: "Fudan Slides · 复旦学术汇报"
+  short_description: "复旦风格 HTML 演示稿，支持保存 PDF、独立演讲稿窗口和双向同步翻页"
+  default_prompt: "用 $fudan-slides，根据这份研究材料制作复旦风格的学术演示稿，沿用模板版式并保留 logo。"
