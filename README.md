@@ -1,6 +1,6 @@
 # Fudan Slides · 复旦学术汇报
 
-复旦风格的学术演示稿 Skill，适用于开题、组会、文献汇报和答辩。保留用户 Claude Design 模板的主要版式，以一个 HTML 和必要 logo 为核心。
+复旦风格的学术演示稿 Skill，适用于开题、组会、文献汇报和答辩。以一个 HTML 和必要 logo 为核心。
 
 [在线查看 12 种版式](https://tianlrz.github.io/fudan-slides/)
 
