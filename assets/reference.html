@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Fudan Slides · 版式参考</title>
 <style>
-:root{--brand:#660874;--accent:#9343b3;--wash:#eae5eb;--ink:#1a1a1a;--body:#3a3a3a;--muted:#727272;--paper:#fff;--font:"Noto Sans SC","Microsoft YaHei","微软雅黑",Arial,sans-serif}
+:root{--brand:#660874;--accent:#9343b3;--wash:#eae5eb;--rule:#d8cfda;--ink:#1a1a1a;--body:#3a3a3a;--muted:#727272;--paper:#fff;--font:"Noto Sans SC","Microsoft YaHei","微软雅黑",Arial,sans-serif}
 *{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#111;font-family:var(--font);color:var(--body)}
 .slide{background:var(--paper);color:var(--body);font-family:var(--font);overflow:hidden;padding:108px 120px 132px}
 h1,h2,h3,p{margin:0}h2{color:var(--brand);font-size:64px;line-height:1.25;font-weight:700}.subtitle{margin-top:20px;font-family:Arial,var(--font);font-size:28px;letter-spacing:.08em;color:var(--accent)}.header{padding-bottom:36px;border-bottom:2px solid var(--wash)}
@@ -13,7 +13,7 @@ h1,h2,h3,p{margin:0}h2{color:var(--brand);font-size:64px;line-height:1.25;font-w
 .page-content{margin-top:64px}.lead{font-size:40px;line-height:1.65;color:var(--ink);max-width:1560px}.topic-list{margin-top:44px;display:grid;gap:28px}.topic-list article{display:grid;grid-template-columns:280px 1fr;gap:45px;align-items:start;padding:22px 0}.topic-list h3{font-size:34px;color:var(--brand);line-height:1.5}.topic-list p{font-size:34px;line-height:1.55;color:var(--body)}
 .columns{display:grid;grid-template-columns:1fr 1fr;gap:75px}.method{border-top:7px solid var(--accent);padding-top:24px}.method h3{font-size:46px;color:var(--brand);line-height:1.3;margin-bottom:28px}.method p{font-size:34px;line-height:1.45;margin-top:20px}.method .label{display:block;color:var(--muted);font-size:24px;margin-bottom:8px}.takeaway{margin-top:32px;background:var(--wash);color:var(--brand);padding:18px 34px;font-size:30px;line-height:1.5}
 .timeline{border-collapse:collapse;width:100%;font-size:30px;line-height:1.4}.timeline th{text-align:left;background:var(--brand);color:white;padding:20px 30px;font-weight:600}.timeline td{padding:18px 30px;border-bottom:2px solid var(--wash)}.timeline th:first-child,.timeline td:first-child{width:280px;color:var(--brand);font-weight:600}.timeline th:first-child{color:white}.timeline td:last-child{color:var(--muted)}
-.footer{position:absolute;left:120px;right:120px;bottom:50px;display:flex;justify-content:space-between;font-size:24px;color:var(--muted)}.slide:not(.cover)::after{content:"";position:absolute;left:0;right:0;bottom:0;height:10px;background:linear-gradient(90deg,var(--brand),var(--accent),#9f74be)}
+.footer{position:absolute;left:120px;right:120px;bottom:50px;display:flex;justify-content:space-between;font-size:24px;color:var(--muted)}.slide:not(.cover)::after{content:"";position:absolute;left:0;right:0;bottom:0;height:10px;background:linear-gradient(90deg,var(--brand),var(--accent))}
 
 /* 常用版式；语义标识供 AI 按页面、内容角色定位，不预设跨页修改。 */
 .agenda-list{list-style:none;margin:0;padding:0;counter-reset:agenda;display:grid;gap:26px}.agenda-list li{counter-increment:agenda;display:grid;grid-template-columns:110px 380px 1fr;gap:25px;align-items:center;padding:24px 0;border-bottom:2px solid var(--wash)}.agenda-list li::before{content:counter(agenda,decimal-leading-zero);font:600 55px Arial;color:var(--accent)}.agenda-list span{font-size:40px;color:var(--brand);font-weight:600}.agenda-list p{font-size:32px;line-height:1.5}
@@ -22,6 +22,97 @@ h1,h2,h3,p{margin:0}h2{color:var(--brand);font-size:64px;line-height:1.25;font-w
 .figure-layout{display:grid;grid-template-columns:1.35fr 1fr;gap:65px}.figure-layout figure{margin:0}.figure-placeholder{height:405px;background:#f5f3f6;border:2px dashed #b9aabd;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;font-size:34px;line-height:1.6;color:var(--muted)}.figure-placeholder small{font-size:27px}.figure-layout figcaption{font-size:25px;line-height:1.5;color:var(--muted);margin-top:20px}.figure-commentary h3{font-size:37px;color:var(--brand);margin:0 0 22px}.figure-commentary h3:not(:first-child){margin-top:38px}.figure-commentary p{font-size:32px;line-height:1.65}
 .table-intro{font-size:32px;line-height:1.5;margin-bottom:35px}.evidence-table{width:100%;border-collapse:collapse;font-size:32px;line-height:1.45;text-align:left}.evidence-table th,.evidence-table td{padding:24px 25px;border-bottom:2px solid var(--wash)}.evidence-table thead th{background:var(--brand);color:#fff;font-weight:600}.evidence-table tbody th{color:var(--brand);font-weight:600;width:24%}
 .main-statement{font-size:63px;color:var(--brand);line-height:1.45;max-width:1530px;margin-bottom:62px}.conclusion-columns{display:grid;grid-template-columns:1fr 1fr;gap:100px}.conclusion-columns h3{font-size:37px;color:var(--brand);margin-bottom:25px}.conclusion-columns p{font-size:34px;line-height:1.65}.conclusion-columns+.takeaway{margin-top:58px}.reference-list{margin:0;padding-left:45px;display:grid;gap:45px;font-size:34px;line-height:1.7}.reference-list li{padding-left:20px}.reference-note{font-size:29px;color:var(--muted);margin-top:70px;line-height:1.6}
+
+/* 去方框编辑排印版式（editorial-thesis / editorial-plate / open-ledger） */
+.ed .ed-kicker{font:600 24px/1.2 Arial,var(--font);letter-spacing:.14em;color:var(--accent)}
+.ed .ed-head{max-width:1540px}
+.ed .ed-title{margin-top:16px;font-size:56px;line-height:1.28;color:var(--brand);font-weight:700;text-wrap:balance}
+.ed-mark{background:linear-gradient(transparent 60%,var(--wash) 60%);color:inherit;padding:0 .06em;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.ed-coda{position:relative;margin-top:36px;padding-top:24px;font-size:31px;line-height:1.55;color:var(--brand);max-width:1260px}
+.ed-coda::before{content:"";position:absolute;left:0;top:0;width:56px;height:3px;background:var(--accent);-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.ed-thesis{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);column-gap:120px;align-items:center;height:100%}
+.ed .ed-assert{margin-top:32px;font-size:68px;line-height:1.3;font-weight:700;color:var(--brand);text-wrap:balance}
+.ed-gloss{margin-top:40px;font-size:30px;line-height:1.6;color:var(--muted);max-width:27em}
+.ed-flow{list-style:none;margin:0;padding:0;border-top:2px solid var(--brand)}
+.ed-flow li{display:grid;grid-template-columns:64px 1fr;column-gap:16px;padding:28px 0;border-bottom:1px solid var(--rule)}
+.ed-flow .ed-num{font:600 26px/1.45 Arial,sans-serif;color:var(--accent)}
+.ed-flow h3{font-size:32px;line-height:1.4;color:var(--ink);font-weight:700}
+.ed-flow p{grid-column:2;margin-top:8px;font-size:29px;line-height:1.55;color:var(--body)}
+.ed-figrow{display:grid;grid-template-columns:minmax(0,8fr) minmax(0,4fr);column-gap:80px;margin-top:44px;align-items:start}
+.ed-plate{margin:0}
+.ed-plate img{display:block;width:100%;max-height:520px;object-fit:contain}
+.ed-plate.ed-bleed{margin-left:-120px}
+.ed-plate.ed-bleed figcaption{margin-left:120px}
+.ed-plate figcaption{margin-top:18px;font-size:24px;line-height:1.5;color:var(--muted)}
+.ed-plate figcaption b{color:var(--brand);font-weight:600;margin-right:.6em}
+.ed-ph{height:500px;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);display:flex;align-items:center;justify-content:center;padding:0 48px;text-align:center;font-size:29px;line-height:1.6;color:var(--muted)}
+.ed-notes{border-left:1px solid var(--rule);padding-left:44px}
+.ed-note{font-size:29px;line-height:1.58;color:var(--body)}
+.ed-note+.ed-note{margin-top:28px}
+.ed-note b{display:block;font:600 22px/1.4 Arial,var(--font);letter-spacing:.14em;color:var(--accent);margin-bottom:6px}
+.ed-quote{position:relative;margin:36px 0 0;padding-left:52px;font-size:31px;line-height:1.52;color:var(--brand)}
+.ed-quote::before{content:"\201C";position:absolute;left:0;top:-.08em;font:700 84px/1 Georgia,"Times New Roman",serif;color:var(--accent)}
+.ed-quote cite{display:block;margin-top:12px;font-size:22px;font-style:normal;color:var(--muted)}
+.ed-ledger{width:100%;margin-top:50px;border-collapse:collapse;font-size:29px;line-height:1.5;text-align:left}
+.ed-ledger col.ed-label{width:20%}
+.ed-ledger thead th{padding:20px 26px 18px;font:600 24px/1.3 Arial,var(--font);letter-spacing:.1em;color:var(--muted);border-top:2px solid var(--brand);border-bottom:1.5px solid var(--brand);vertical-align:bottom}
+.ed-ledger thead th.is-focus{color:var(--brand);box-shadow:inset 0 4px 0 var(--accent);-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.ed-ledger tbody th,.ed-ledger tbody td{padding:22px 26px;border-bottom:1px solid var(--rule);vertical-align:top}
+.ed-ledger tbody tr:last-child>*{border-bottom:2px solid var(--brand)}
+.ed-ledger tbody th{color:var(--brand);font-weight:600}
+.ed-ledger td.is-focus{color:var(--ink);font-weight:600}
+.ed-ledger th:first-child,.ed-ledger td:first-child{padding-left:0}
+.ed-ledger .num{font-family:Arial,var(--font);font-variant-numeric:tabular-nums;text-align:right}
+.ed-footnote{margin-top:26px;font-size:24px;line-height:1.55;color:var(--muted);max-width:1400px}
+
+/* 原生矢量图示与数据版式（diagram / metrics / stage-axis） */
+.viz-page{color:var(--ink)}
+.viz-page .header h2{overflow-wrap:anywhere}
+.viz-page figure{margin:0;min-width:0}
+.viz-page figure.page-content{margin-top:54px}
+.viz-page svg{display:block}
+.viz-page svg text{fill:var(--ink);font-family:var(--font)}
+.viz-page figcaption{margin-top:20px;font-size:24px;line-height:1.5;color:var(--muted);overflow-wrap:anywhere}
+.viz-page .viz-num{font-family:Arial,var(--font);font-variant-numeric:tabular-nums}
+.diagram-layout{display:grid;grid-template-columns:1080px 528px;gap:72px;align-items:start}
+.diagram-graphic .region{fill:none;stroke:var(--brand);stroke-width:2;stroke-dasharray:6 7}
+.diagram-graphic .flow,.diagram-graphic .return{fill:none;stroke-width:3;stroke-linejoin:round}
+.diagram-graphic .flow{stroke:var(--brand)}
+.diagram-graphic .return{stroke:var(--accent);stroke-dasharray:10 8}
+.diagram-graphic .port{fill:var(--paper);stroke:var(--brand);stroke-width:3}
+.diagram-graphic .checkpoint{fill:var(--brand)}
+.diagram-graphic .node-label{font-size:29px;font-weight:600}
+.diagram-graphic .edge-label{font-size:24px;fill:var(--body)}
+.diagram-notes{margin:48px 0 0;padding:4px 0 4px 32px;border-left:2px solid var(--rule);overflow-wrap:anywhere}
+.diagram-notes dt{color:var(--brand);font-size:32px;font-weight:700}
+.diagram-notes dd{margin:10px 0 0;font-size:29px;line-height:1.52;color:var(--body)}
+.diagram-notes dd+dt{margin-top:36px}
+.metrics-layout{display:grid;grid-template-columns:480px 1128px;gap:72px;padding-top:36px;align-items:start}
+.metric-hero{margin:0}
+.metric-hero dt{font-size:32px;line-height:1.35;color:var(--body);font-weight:600}
+.metric-hero dd{margin:16px 0 0;color:var(--brand);font-size:112px;font-weight:700;line-height:1.1;white-space:nowrap}
+.metric-hero .unit{margin-left:12px;font-size:32px;font-weight:600}
+.metric-subnote{margin-top:24px;font-size:25px;line-height:1.55;color:var(--muted);max-width:440px}
+.metric-chart{border-top:2px solid var(--brand);padding-top:14px}
+.metric-chart ul{list-style:none;margin:0;padding:0}
+.metric-row,.metric-scale{display:grid;grid-template-columns:216px 700px 172px;column-gap:20px;align-items:center}
+.metric-row{min-height:92px;font-size:30px;line-height:1.3;border-bottom:1px solid var(--rule)}
+.metric-row>span:first-child{overflow-wrap:anywhere;color:var(--body)}
+.metric-row.is-key>span:first-child,.metric-row.is-key .value{color:var(--ink);font-weight:600}
+.metric-row .value{text-align:right;white-space:nowrap}
+.metric-track{stroke:var(--wash);stroke-width:4}
+.metric-bar{stroke:var(--accent);stroke-width:10;stroke-linecap:butt}
+.metric-bar.key{stroke:var(--brand)}
+.metric-scale{margin-top:10px;font-size:23px;line-height:1.4;color:var(--muted)}
+.metric-scale>span{grid-column:2;display:flex;justify-content:space-between}
+.stage-graphic .axis-line{stroke:var(--brand);stroke-width:2}
+.stage-graphic .stem{fill:none;stroke:var(--brand);stroke-width:2}
+.stage-graphic .branch{stroke:var(--accent);stroke-dasharray:10 8}
+.stage-graphic .done{fill:var(--brand)}
+.stage-graphic .planned{fill:var(--paper);stroke:var(--brand);stroke-width:3}
+.stage-graphic .stage-name{font-size:33px;font-weight:700}
+.stage-graphic .stage-detail{font-size:26px;fill:var(--body)}
+@media print{.viz-page,.ed{--font:"PingFang SC","Hiragino Sans GB","Heiti SC","Noto Sans SC","Microsoft YaHei","微软雅黑",Arial,sans-serif}}
 
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
@@ -48,7 +139,7 @@ h1,h2,h3,p{margin:0}h2{color:var(--brand);font-size:64px;line-height:1.25;font-w
       <li><span>分析与证据</span><p data-slot="agenda-evidence" data-node-id="agenda--agenda-evidence">呈现材料支持的发现或待验证问题</p></li>
       <li><span>总结与安排</span><p data-slot="agenda-plan" data-node-id="agenda--agenda-plan">回答问题并说明后续工作</p></li>
     </ol></div>
-    <footer class="footer"><span data-slot="footer-topic" data-node-id="agenda--footer-topic">汇报目录</span><span data-page>02 / 12</span></footer>
+    <footer class="footer"><span data-slot="footer-topic" data-node-id="agenda--footer-topic">汇报目录</span><span data-page>02 / 18</span></footer>
   </section>
   <section data-slide-id="divider" class="slide section-break" aria-label="章节过渡" data-kind="divider">
     <!-- LOGO：logo-white.png，官方反白原件；深色背景使用，保留比例。 -->
@@ -67,7 +158,22 @@ h1,h2,h3,p{margin:0}h2{color:var(--brand);font-size:64px;line-height:1.25;font-w
         <article><h3>预期价值</h3><p data-slot="value" data-node-id="questions--value">说明研究结果可以帮助理解或改进什么。</p></article>
       </div>
     </div>
-    <footer class="footer"><span data-slot="footer-topic" data-node-id="questions--footer-topic">研究主题</span><span data-page>04 / 12</span></footer>
+    <footer class="footer"><span data-slot="footer-topic" data-node-id="questions--footer-topic">研究主题</span><span data-page>04 / 18</span></footer>
+  </section>
+  <section data-kind="editorial-thesis" data-slide-id="editorial-thesis" class="slide ed" aria-label="核心论断">
+    <div class="ed-thesis">
+      <div data-role="claim">
+        <p class="ed-kicker" data-slot="kicker" data-node-id="editorial-thesis--kicker">核心论断 · THESIS</p>
+        <h2 class="ed-assert" data-role="main-claim" data-slot="claim" data-node-id="editorial-thesis--claim">用一句完整判断陈述本页主张，仅高亮<mark class="ed-mark">关键概念</mark></h2>
+        <p class="ed-gloss" data-slot="claim-scope" data-node-id="editorial-thesis--claim-scope">用一句限定语交代样本边界、成立前提或尚待验证的环节。</p>
+      </div>
+      <ol class="ed-flow" data-role="evidence-flow">
+        <li><span class="ed-num">01</span><h3 data-slot="arg-1-title" data-node-id="editorial-thesis--arg-1-title">已有事实或文献依据</h3><p data-slot="arg-1-body" data-node-id="editorial-thesis--arg-1-body">填写来自实际材料的第一条核心支撑证据。</p></li>
+        <li><span class="ed-num">02</span><h3 data-slot="arg-2-title" data-node-id="editorial-thesis--arg-2-title">机制或方法关联</h3><p data-slot="arg-2-body" data-node-id="editorial-thesis--arg-2-body">说明该依据如何指向左侧判断，保持因果链清楚。</p></li>
+        <li><span class="ed-num">03</span><h3 data-slot="arg-3-title" data-node-id="editorial-thesis--arg-3-title">适用边界与可行性</h3><p data-slot="arg-3-body" data-node-id="editorial-thesis--arg-3-body">补充反例条件、资源约束或后续核验方式。</p></li>
+      </ol>
+    </div>
+    <footer class="footer"><span data-slot="footer-topic" data-node-id="editorial-thesis--footer-topic">核心论断</span><span data-page>05 / 18</span></footer>
   </section>
   <section data-slide-id="workflow" class="slide" aria-label="技术路线" data-kind="workflow">
     <header class="header"><h2 data-slot="section-title" data-node-id="workflow--section-title">技术路线</h2><p class="subtitle" data-slot="section-subtitle" data-node-id="workflow--section-subtitle">输入、处理与验证的关系</p></header>
@@ -79,7 +185,58 @@ h1,h2,h3,p{margin:0}h2{color:var(--brand);font-size:64px;line-height:1.25;font-w
       <li><span>汇报整理</span><h3 data-slot="step-4-title" data-node-id="workflow--step-4-title">形成产出</h3><p data-slot="step-4-body" data-node-id="workflow--step-4-body">填写图表、报告或可复现材料。</p></li>
     </ol>
     <p class="takeaway" data-role="takeaway" data-slot="workflow-note" data-node-id="workflow--workflow-note">说明关键依赖，或者哪一步最需要质量控制。</p></div>
-    <footer class="footer"><span data-slot="footer-topic" data-node-id="workflow--footer-topic">技术路线</span><span data-page>05 / 12</span></footer>
+    <footer class="footer"><span data-slot="footer-topic" data-node-id="workflow--footer-topic">技术路线</span><span data-page>06 / 18</span></footer>
+  </section>
+  <section class="slide viz-page" data-kind="diagram" data-slide-id="diagram" aria-label="系统架构与闭环">
+    <header class="header"><h2 data-slot="section-title" data-node-id="diagram--section-title">系统架构与核查闭环</h2><p class="subtitle" data-slot="section-subtitle" data-node-id="diagram--section-subtitle">模块边界、主路径流向与条件回流</p></header>
+    <div class="page-content diagram-layout">
+      <figure data-role="system-diagram">
+        <svg class="diagram-graphic" width="1080" height="486" viewBox="0 0 1080 486" role="img" aria-labelledby="diagram-title diagram-desc">
+          <title id="diagram-title">处理、分析与核查的闭环结构</title>
+          <desc id="diagram-desc">输入依次经过上游处理、核心分析与质量核查；核查通过后跨出边界交付产出，未达标时沿上方虚线返回上游调整。</desc>
+          <defs>
+            <marker id="diagram-flow-tip" markerUnits="userSpaceOnUse" markerWidth="14" markerHeight="14" viewBox="0 0 14 14" refX="13" refY="7" orient="auto">
+              <path d="M1 1L13 7L1 13Z" fill="var(--brand)"/>
+            </marker>
+            <marker id="diagram-return-tip" markerUnits="userSpaceOnUse" markerWidth="14" markerHeight="14" viewBox="0 0 14 14" refX="13" refY="7" orient="auto">
+              <path d="M1 1L13 7L1 13Z" fill="var(--accent)"/>
+            </marker>
+          </defs>
+          <rect class="region" x="224" y="52" width="824" height="330" data-role="system-boundary" data-slot="boundary" data-node-id="diagram--boundary"/>
+          <text class="edge-label" x="252" y="94" data-slot="boundary-label" data-node-id="diagram--boundary-label">处理与核查边界</text>
+          <g class="flow" marker-end="url(#diagram-flow-tip)" data-role="forward-flow">
+            <path d="M90 210H324"/>
+            <path d="M356 210H584"/>
+            <path d="M616 210H843"/>
+            <path d="M873 210H994V433"/>
+          </g>
+          <path class="return" d="M858 195V142H340V194" marker-end="url(#diagram-return-tip)" data-role="feedback-flow" data-slot="feedback-route" data-node-id="diagram--feedback-route"/>
+          <g class="edge-label">
+            <text x="599" y="124" text-anchor="middle" data-slot="return-label" data-node-id="diagram--return-label">未达条件 · 返回调整</text>
+            <text x="974" y="336" text-anchor="end" data-slot="pass-label" data-node-id="diagram--pass-label">核查通过</text>
+          </g>
+          <g class="node-label" text-anchor="middle" data-role="system-nodes">
+            <circle class="port" cx="78" cy="210" r="9"/>
+            <text x="78" y="258" data-slot="input-label" data-node-id="diagram--input-label">资料输入</text>
+            <circle class="port" cx="340" cy="210" r="13"/>
+            <text x="340" y="258" data-slot="planner-label" data-node-id="diagram--planner-label">上游处理</text>
+            <circle class="port" cx="600" cy="210" r="13"/>
+            <text x="600" y="258" data-slot="executor-label" data-node-id="diagram--executor-label">核心分析</text>
+            <circle class="checkpoint" cx="858" cy="210" r="13"/>
+            <text x="858" y="258" data-slot="verifier-label" data-node-id="diagram--verifier-label">质量核查</text>
+            <circle class="port" cx="994" cy="445" r="9"/>
+            <text x="970" y="455" text-anchor="end" data-slot="output-label" data-node-id="diagram--output-label">结果产出</text>
+          </g>
+        </svg>
+      </figure>
+      <dl class="diagram-notes" data-role="diagram-notes">
+        <dt data-slot="condition-title" data-node-id="diagram--condition-title">回流触发条件</dt>
+        <dd data-slot="condition-body" data-node-id="diagram--condition-body">核查未满足预设质量标准时，携带问题记录退回上游修正参数或样本。</dd>
+        <dt data-slot="output-title" data-node-id="diagram--output-title">边界交付条件</dt>
+        <dd data-slot="output-body" data-node-id="diagram--output-body">通过核查口径后跨出系统边界，同步留存结果产出与复核记录。</dd>
+      </dl>
+    </div>
+    <footer class="footer"><span data-slot="footer-topic" data-node-id="diagram--footer-topic">架构与闭环</span><span data-page>07 / 18</span></footer>
   </section>
   <section data-slide-id="figure" class="slide" aria-label="图文分析" data-kind="figure-text">
     <header class="header"><h2 data-slot="section-title" data-node-id="figure--section-title">图文分析</h2><p class="subtitle" data-slot="section-subtitle" data-node-id="figure--section-subtitle">让原始证据与解释相邻</p></header>
@@ -88,7 +245,26 @@ h1,h2,h3,p{margin:0}h2{color:var(--brand);font-size:64px;line-height:1.25;font-w
       <div class="figure-commentary" data-role="figure-explanation"><h3 data-slot="figure-message" data-node-id="figure--figure-message">这张图说明什么？</h3><p data-slot="figure-observation" data-node-id="figure--figure-observation">描述能从图中直接观察到的现象。</p><h3>如何解释？</h3><p data-slot="figure-interpretation" data-node-id="figure--figure-interpretation">结合研究问题解释，并注明证据不能支持的结论。</p></div>
     </div>
     <p class="takeaway" data-role="takeaway" data-slot="figure-note" data-node-id="figure--figure-note">用一句话连接图中证据与本页要点。</p></div>
-    <footer class="footer"><span data-slot="footer-topic" data-node-id="figure--footer-topic">图文分析</span><span data-page>06 / 12</span></footer>
+    <footer class="footer"><span data-slot="footer-topic" data-node-id="figure--footer-topic">图文分析</span><span data-page>08 / 18</span></footer>
+  </section>
+  <section data-kind="editorial-plate" data-slide-id="editorial-plate" class="slide ed" aria-label="图版与旁注">
+    <header class="ed-head">
+      <p class="ed-kicker" data-slot="kicker" data-node-id="editorial-plate--kicker">图版解读 · PLATE &amp; MARGINALIA</p>
+      <h2 class="ed-title" data-slot="figure-claim" data-node-id="editorial-plate--figure-claim">用一句判断概括图版呈现的核心现象</h2>
+    </header>
+    <div class="ed-figrow">
+      <figure class="ed-plate" data-role="figure">
+        <div class="ed-ph" data-slot="figure-placeholder" data-node-id="editorial-plate--figure-placeholder"><span>在此等比置入高分辨率论文原图或实验图版（无外框、无底纹）</span></div>
+        <!-- 替换为真实图像：<img src="..." alt="..."> -->
+        <figcaption data-slot="figure-caption" data-node-id="editorial-plate--figure-caption"><b>图 1</b>填写原图题注、坐标口径、文献出处或数据来源</figcaption>
+      </figure>
+      <aside class="ed-notes" data-role="figure-explanation">
+        <p class="ed-note" data-slot="observation" data-node-id="editorial-plate--observation"><b>直接观察</b>描述图版中可直接读出的分布、结构或变化趋势。</p>
+        <p class="ed-note" data-slot="interpretation" data-node-id="editorial-plate--interpretation"><b>推断边界</b>结合研究问题说明合理解释，并区分图版未能直接证明的部分。</p>
+        <blockquote class="ed-quote" data-role="quote" data-slot="quote" data-node-id="editorial-plate--quote">需要引用关键定义或文献原句时置于此处，核对原文措辞。<cite data-slot="quote-source" data-node-id="editorial-plate--quote-source">作者，年份，文献或章节位置</cite></blockquote>
+      </aside>
+    </div>
+    <footer class="footer"><span data-slot="footer-topic" data-node-id="editorial-plate--footer-topic">图版解读</span><span data-page>09 / 18</span></footer>
   </section>
   <section data-kind="comparison" data-slide-id="comparison" class="slide" aria-label="方法对照">
     <header class="header"><h2 data-slot="section-title" data-node-id="comparison--section-title">方法对照</h2><p class="subtitle" data-slot="section-subtitle" data-node-id="comparison--section-subtitle">比较口径与方法选择</p></header>
@@ -97,7 +273,25 @@ h1,h2,h3,p{margin:0}h2{color:var(--brand);font-size:64px;line-height:1.25;font-w
       <article class="method"><h3 data-slot="method-b" data-node-id="comparison--method-b">方法 B</h3><p><span class="label">基本思路</span><span data-slot="method-b-idea" data-node-id="comparison--method-b-idea">填写另一种方法的核心做法。</span></p><p><span class="label">适用条件</span><span data-slot="method-b-scope" data-node-id="comparison--method-b-scope">填写比较时需要保持的条件。</span></p><p><span class="label">评价方式</span><span data-slot="method-b-evaluation" data-node-id="comparison--method-b-evaluation">填写与方法 A 一致的评价口径。</span></p></article>
     </div>
     <p class="takeaway" data-role="takeaway" data-slot="takeaway" data-node-id="comparison--takeaway">填写比较的依据或需要验证的差异。</p>
-    <footer class="footer"><span data-slot="footer-topic" data-node-id="comparison--footer-topic">研究方法</span><span data-page>07 / 12</span></footer>
+    <footer class="footer"><span data-slot="footer-topic" data-node-id="comparison--footer-topic">研究方法</span><span data-page>10 / 18</span></footer>
+  </section>
+  <section data-kind="open-ledger" data-slide-id="open-ledger" class="slide ed" aria-label="开放三线对照表">
+    <header class="ed-head">
+      <p class="ed-kicker" data-slot="kicker" data-node-id="open-ledger--kicker">开放三线表 · OPEN LEDGER</p>
+      <h2 class="ed-title" data-slot="ledger-claim" data-node-id="open-ledger--ledger-claim">用一句判断交代多方案对照后的选择依据</h2>
+    </header>
+    <table class="ed-ledger" data-role="comparison-table">
+      <colgroup><col class="ed-label"><col><col><col></colgroup>
+      <thead><tr><th>比较维度</th><th data-slot="col-a" data-node-id="open-ledger--col-a">基线方案 A</th><th data-slot="col-b" data-node-id="open-ledger--col-b">对照方案 B</th><th class="is-focus" data-slot="col-focus" data-node-id="open-ledger--col-focus">本研究方案</th></tr></thead>
+      <tbody>
+        <tr><th>核心机制</th><td data-slot="a-mech" data-node-id="open-ledger--a-mech">填写方案 A 的主要做法</td><td data-slot="b-mech" data-node-id="open-ledger--b-mech">填写方案 B 的主要做法</td><td class="is-focus" data-slot="focus-mech" data-node-id="open-ledger--focus-mech">填写本方案的关键改进点</td></tr>
+        <tr><th>适用条件</th><td data-slot="a-scope" data-node-id="open-ledger--a-scope">样本或假设限制</td><td data-slot="b-scope" data-node-id="open-ledger--b-scope">依赖的数据或算力条件</td><td class="is-focus" data-slot="focus-scope" data-node-id="open-ledger--focus-scope">保持一致的比较条件</td></tr>
+        <tr><th>评价指标</th><td data-slot="a-metric" data-node-id="open-ledger--a-metric">待填实测值</td><td data-slot="b-metric" data-node-id="open-ledger--b-metric">待填实测值</td><td class="is-focus" data-slot="focus-metric" data-node-id="open-ledger--focus-metric">待填同口径结果</td></tr>
+        <tr><th>局限与代价</th><td data-slot="a-cost" data-node-id="open-ledger--a-cost">已知短板或误差来源</td><td data-slot="b-cost" data-node-id="open-ledger--b-cost">已知短板或迁移成本</td><td class="is-focus" data-slot="focus-cost" data-node-id="open-ledger--focus-cost">本方案的额外开销与边界</td></tr>
+      </tbody>
+    </table>
+    <p class="ed-footnote" data-role="footnote" data-slot="ledger-note" data-node-id="open-ledger--ledger-note">注：三线表按实测或文献核验结果填写；定量指标建议附单位与样本量，并使用 .num 右对齐保持小数精度一致。</p>
+    <footer class="footer"><span data-slot="footer-topic" data-node-id="open-ledger--footer-topic">方案对照</span><span data-page>11 / 18</span></footer>
   </section>
   <section data-slide-id="evidence" class="slide" aria-label="结果表格" data-kind="evidence-table">
     <header class="header"><h2 data-slot="section-title" data-node-id="evidence--section-title">结果与证据</h2><p class="subtitle" data-slot="section-subtitle" data-node-id="evidence--section-subtitle">指标口径、结果与适用范围</p></header>
@@ -108,7 +302,48 @@ h1,h2,h3,p{margin:0}h2{color:var(--brand);font-size:64px;line-height:1.25;font-w
       <tr><th data-slot="object-3" data-node-id="evidence--object-3">对象三</th><td data-slot="metric-3" data-node-id="evidence--metric-3">待填写</td><td data-slot="result-3" data-node-id="evidence--result-3">待填写</td><td data-slot="scope-3" data-node-id="evidence--scope-3">待填写</td></tr>
     </tbody></table>
     <p class="takeaway" data-role="takeaway" data-slot="table-note" data-node-id="evidence--table-note">说明最值得关注的差异，或仍需核查的问题。</p></div>
-    <footer class="footer"><span data-slot="footer-topic" data-node-id="evidence--footer-topic">结果表格</span><span data-page>08 / 12</span></footer>
+    <footer class="footer"><span data-slot="footer-topic" data-node-id="evidence--footer-topic">结果表格</span><span data-page>12 / 18</span></footer>
+  </section>
+  <section class="slide viz-page" data-kind="metrics" data-slide-id="metrics" aria-label="关键指标比例对照">
+    <header class="header"><h2 data-slot="section-title" data-node-id="metrics--section-title">关键指标比例对照</h2><p class="subtitle" data-slot="section-subtitle" data-node-id="metrics--section-subtitle">核心差值读数与同刻度横向比例条</p></header>
+    <div class="page-content metrics-layout">
+      <dl class="metric-hero" data-role="headline-metric">
+        <dt data-slot="metric-label" data-node-id="metrics--metric-label">示例刻度差值</dt>
+        <dd><span class="viz-num" data-slot="metric-delta" data-node-id="metrics--metric-delta">+17.5</span><span class="unit" data-slot="metric-delta-unit" data-node-id="metrics--metric-delta-unit">百分点</span></dd>
+        <p class="metric-subnote" data-slot="metric-subnote" data-node-id="metrics--metric-subnote">正式稿替换为实测主指标变化量与统计口径</p>
+      </dl>
+      <figure class="metric-chart" data-role="bar-comparison" aria-label="同口径指标横向比例">
+        <ul>
+          <li class="metric-row">
+            <span data-slot="baseline-label" data-node-id="metrics--baseline-label">基线方案</span>
+            <svg width="700" height="32" viewBox="0 0 700 32" aria-hidden="true">
+              <line class="metric-track" x1="0" y1="16" x2="700" y2="16"/>
+              <line class="metric-bar" x1="0" y1="16" x2="437.5" y2="16" data-slot="baseline-bar" data-node-id="metrics--baseline-bar"/>
+            </svg>
+            <span class="viz-num value" data-slot="baseline-value" data-node-id="metrics--baseline-value">62.5%</span>
+          </li>
+          <li class="metric-row">
+            <span data-slot="reference-label" data-node-id="metrics--reference-label">对照方案</span>
+            <svg width="700" height="32" viewBox="0 0 700 32" aria-hidden="true">
+              <line class="metric-track" x1="0" y1="16" x2="700" y2="16"/>
+              <line class="metric-bar" x1="0" y1="16" x2="504" y2="16" data-slot="reference-bar" data-node-id="metrics--reference-bar"/>
+            </svg>
+            <span class="viz-num value" data-slot="reference-value" data-node-id="metrics--reference-value">72.0%</span>
+          </li>
+          <li class="metric-row is-key">
+            <span data-slot="candidate-label" data-node-id="metrics--candidate-label">本研究方案</span>
+            <svg width="700" height="32" viewBox="0 0 700 32" aria-hidden="true">
+              <line class="metric-track" x1="0" y1="16" x2="700" y2="16"/>
+              <line class="metric-bar key" x1="0" y1="16" x2="560" y2="16" data-slot="candidate-bar" data-node-id="metrics--candidate-bar"/>
+            </svg>
+            <span class="viz-num value" data-slot="candidate-value" data-node-id="metrics--candidate-value">80.0%</span>
+          </li>
+        </ul>
+        <div class="metric-scale viz-num" aria-hidden="true"><span><span>0%</span><span>50%</span><span>100%</span></span></div>
+        <figcaption data-slot="metric-scope" data-node-id="metrics--metric-scope">排版刻度示例，非研究结论。替换真实数据时按 x2 = 700 × 百分比同步更新条长、读数、样本量与评价口径。</figcaption>
+      </figure>
+    </div>
+    <footer class="footer"><span data-slot="footer-topic" data-node-id="metrics--footer-topic">结果与指标</span><span data-page>13 / 18</span></footer>
   </section>
   <section data-kind="plan" data-slide-id="plan" class="slide" aria-label="工作计划">
     <header class="header"><h2 data-slot="section-title" data-node-id="plan--section-title">工作计划</h2><p class="subtitle" data-slot="section-subtitle" data-node-id="plan--section-subtitle">阶段任务与验收依据</p></header>
@@ -119,7 +354,36 @@ h1,h2,h3,p{margin:0}h2{color:var(--brand);font-size:64px;line-height:1.25;font-w
       <tr><td>整理</td><td data-slot="task-4" data-node-id="plan--task-4">形成报告与汇报材料</td><td data-slot="output-4" data-node-id="plan--output-4">填写最终成果</td></tr>
     </tbody></table></div>
     <p class="takeaway" data-role="takeaway" data-slot="plan-note" data-node-id="plan--plan-note">时间和任务按用户实际计划填写，注明关键依赖。</p>
-    <footer class="footer"><span data-slot="footer-topic" data-node-id="plan--footer-topic">执行安排</span><span data-page>09 / 12</span></footer>
+    <footer class="footer"><span data-slot="footer-topic" data-node-id="plan--footer-topic">执行安排</span><span data-page>14 / 18</span></footer>
+  </section>
+  <section class="slide viz-page" data-kind="stage-axis" data-slide-id="stage-axis" aria-label="阶段里程碑细轴">
+    <header class="header"><h2 data-slot="section-title" data-node-id="stage-axis--section-title">阶段进展与里程碑核查</h2><p class="subtitle" data-slot="section-subtitle" data-node-id="stage-axis--section-subtitle">单根时间细轴、节点完成态与条件复查支线</p></header>
+    <figure class="page-content" data-role="stage-axis">
+      <svg class="stage-graphic" width="1680" height="486" viewBox="0 0 1680 486" role="img" aria-labelledby="stage-axis-title stage-axis-desc">
+        <title id="stage-axis-title">研究阶段主轴与条件复查支线</title>
+        <desc id="stage-axis-desc">四个阶段沿水平细轴依次推进，实心圆表示已完成，空心圆表示计划阶段，虚线支线表示未达门槛时的补充复查。</desc>
+        <line class="axis-line" x1="32" y1="272" x2="1648" y2="272"/>
+        <path class="stem" d="M180 235V257M610 287V312M1050 235V257M1490 287V312"/>
+        <path class="stem branch" d="M1050 287V440H1196" data-role="condition-branch" data-slot="branch-route" data-node-id="stage-axis--branch-route"/>
+        <g text-anchor="middle" data-role="stage-nodes">
+          <circle class="done" cx="180" cy="272" r="12"/>
+          <text class="stage-detail viz-num" x="180" y="174" data-slot="stage-1-date" data-node-id="stage-axis--stage-1-date">阶段 01</text>
+          <text class="stage-name" x="180" y="219" data-slot="stage-1-name" data-node-id="stage-axis--stage-1-name">确定口径与基线</text>
+          <circle class="done" cx="610" cy="272" r="12"/>
+          <text class="stage-name" x="610" y="351" data-slot="stage-2-name" data-node-id="stage-axis--stage-2-name">开展主体分析</text>
+          <text class="stage-detail" x="610" y="393" data-slot="stage-2-milestone" data-node-id="stage-axis--stage-2-milestone"><tspan class="viz-num">阶段 02</tspan> · 验收指标 ≥ 门槛</text>
+          <circle class="done" cx="1050" cy="272" r="12"/>
+          <text class="stage-detail viz-num" x="1050" y="174" data-slot="stage-3-date" data-node-id="stage-axis--stage-3-date">阶段 03</text>
+          <text class="stage-name" x="1050" y="219" data-slot="stage-3-name" data-node-id="stage-axis--stage-3-name">对照验证与复核</text>
+          <circle class="planned" cx="1490" cy="272" r="12"/>
+          <text class="stage-name" x="1490" y="351" data-slot="stage-4-name" data-node-id="stage-axis--stage-4-name">独立复验与归档</text>
+          <text class="stage-detail" x="1490" y="393" data-slot="stage-4-date" data-node-id="stage-axis--stage-4-date"><tspan class="viz-num">阶段 04</tspan> · 计划节点待完成</text>
+        </g>
+        <text class="stage-detail" x="1214" y="449" data-slot="branch-label" data-node-id="stage-axis--branch-label">未达验收门槛时补充复查样本</text>
+      </svg>
+      <figcaption data-slot="axis-caption" data-node-id="stage-axis--axis-caption">实心节点表示已完成，空心节点表示计划阶段，虚线表示条件分支；时间节点与验收门槛按实际计划填写。</figcaption>
+    </figure>
+    <footer class="footer"><span data-slot="footer-topic" data-node-id="stage-axis--footer-topic">阶段进程</span><span data-page>15 / 18</span></footer>
   </section>
   <section data-slide-id="conclusion" class="slide" aria-label="总结与局限" data-kind="conclusion">
     <header class="header"><h2 data-slot="section-title" data-node-id="conclusion--section-title">总结与局限</h2><p class="subtitle" data-slot="section-subtitle" data-node-id="conclusion--section-subtitle">回答问题，并保留结论的边界</p></header>
@@ -129,7 +393,7 @@ h1,h2,h3,p{margin:0}h2{color:var(--brand);font-size:64px;line-height:1.25;font-w
       <article data-role="limitation"><h3>适用范围与局限</h3><p data-slot="limitation" data-node-id="conclusion--limitation">填写样本范围、方法限制和仍不确定的部分。</p></article>
     </div>
     <p class="takeaway" data-role="takeaway" data-slot="next-step" data-node-id="conclusion--next-step">填写下一步最需要验证或改进的事项。</p></div>
-    <footer class="footer"><span data-slot="footer-topic" data-node-id="conclusion--footer-topic">总结与局限</span><span data-page>10 / 12</span></footer>
+    <footer class="footer"><span data-slot="footer-topic" data-node-id="conclusion--footer-topic">总结与局限</span><span data-page>16 / 18</span></footer>
   </section>
   <section data-slide-id="references" class="slide" aria-label="参考资料" data-kind="references">
     <header class="header"><h2 data-slot="section-title" data-node-id="references--section-title">参考资料</h2><p class="subtitle" data-slot="section-subtitle" data-node-id="references--section-subtitle">使用经过核验的实际来源</p></header>
@@ -138,7 +402,7 @@ h1,h2,h3,p{margin:0}h2{color:var(--brand);font-size:64px;line-height:1.25;font-w
       <li data-slot="reference-2" data-node-id="references--reference-2">填写数据、工具或官方文档的名称与来源。</li>
       <li data-slot="reference-3" data-node-id="references--reference-3">填写图片、图表或其他材料的原始出处。</li>
     </ol><p class="reference-note" data-slot="reference-note" data-node-id="references--reference-note">页内图注与引用应能对应到具体来源，不生成虚构文献。</p></div>
-    <footer class="footer"><span data-slot="footer-topic" data-node-id="references--footer-topic">参考资料</span><span data-page>11 / 12</span></footer>
+    <footer class="footer"><span data-slot="footer-topic" data-node-id="references--footer-topic">参考资料</span><span data-page>17 / 18</span></footer>
   </section>
   <section data-slide-id="closing" class="slide section-break closing" aria-label="讨论与致谢" data-kind="closing">
     <!-- LOGO：logo-white.png，官方反白原件；深色背景使用，保留比例。 -->
@@ -148,7 +412,7 @@ h1,h2,h3,p{margin:0}h2{color:var(--brand);font-size:64px;line-height:1.25;font-w
   </section>
 </deck-stage>
 <!-- NOTES：每页一项，与 .slide 的顺序及数量同步。生成新稿时替换。 -->
-<script type="application/json" id="speaker-notes">["填写本次汇报的开场讲稿。", "说明本次汇报的顺序与重点。", "过渡到本章节，说明它与研究问题的关系。", "填写研究背景、研究问题和预期价值的讲稿。", "解释实际技术路线及每一步的产出。", "解释图中直接证据、推断和局限，注明来源。", "填写方法选择、比较口径和评价方式的讲稿。", "讲清实际指标和结果，不把待填写占位当作数据。", "填写真实工作安排和交付计划的讲稿。", "回答研究问题，说明证据范围与尚未解决的问题。", "核对来源，不需要逐条念参考资料。", "感谢听众并进入讨论。"]</script>
+<script type="application/json" id="speaker-notes">["填写本次汇报的开场讲稿。", "说明本次汇报的顺序与重点。", "过渡到本章节，说明它与研究问题的关系。", "填写研究背景、研究问题和预期价值的讲稿。", "先用一句话给出核心判断与成立边界，再按编号顺序展开三条支撑依据。", "解释实际技术路线及每一步的产出。", "沿箭头说明主流程与系统边界，重点交代触发回流和允许交付的判定条件。", "解释图中直接证据、推断和局限，注明来源。", "结合无框图版与右侧旁注，先指明图中直接现象，再补充原文引据与解释边界。", "填写方法选择、比较口径和评价方式的讲稿。", "按比较维度横向对照各方案，重点说明聚焦列的改进依据与付出的代价。", "讲清实际指标和结果，不把待填写占位当作数据。", "先报左侧主指标变化量，再对照右侧同刻度比例条说明各方案的实测差距与样本口径。", "填写真实工作安排和交付计划的讲稿。", "沿横轴交代已完成阶段与待推进节点，并说明关键里程碑的验收门槛及复查支线。", "回答研究问题，说明证据范围与尚未解决的问题。", "核对来源，不需要逐条念参考资料。", "感谢听众并进入讨论。"]</script>
 <!-- 运行时：复用用户设计包的 deck-stage.js，内嵌以便携带。S 打开独立讲稿窗口。 -->
 <script>
 /**
